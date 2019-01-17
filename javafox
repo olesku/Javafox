@@ -7,8 +7,7 @@ XAUTH="$XAUTHD/xauth"
 xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 
 if [ ! -d "${HOME}/.javafox/" ]; then
-  mkdir -p "${HOME}/.javafox"
-  mkdir -p "${HOME}/.javafox/.mozilla"
+  mkdir -p mkdir -p "${HOME}/.javafox/.mozilla"
   mkdir -p "${HOME}/.javafox/.java/deployment/security"
   touch "${HOME}/.javafox/.java/deployment/security/exception.sites"
 fi
